@@ -5,10 +5,15 @@ import Note from "./Note";
 import CreateArea from "./CreateArea";
 
 function App() {
+
+  function addNote (){
+
+  };
+
   return (
     <div>
       <Header />
-      <CreateArea />
+      <CreateArea btnClicked = {addNote} />
       <Note key={1} title="Note title" content="Note content" />
       <Footer />
     </div>
